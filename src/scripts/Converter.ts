@@ -86,8 +86,8 @@ function generateConverter(
 					// コードではない場合
 				} else {
 					// すでにコメントアウトしていなければ行う
-					if (!line.match(/^\s*\/\/.*$/)) result += "// "
-					result += line
+					if (!line.match(/^\s*\/\/.*$/)) result += `[${line}]`
+					//result += line
 				}
 			}
 
